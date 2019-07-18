@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+  <title>HI Family</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <style>
+    h1 {
+      font-size:50px; text-align:center; border-bottom:1px solid gray; margin:0; padding:20px; ;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+
+    }
+    ol {
+      border-right:1px solid gray;
+      width:150px;
+      margin:0;
+      padding:20px; padding-left:30px;
+    }
+    #article {
+      margin-left:100px;
+
+    }
+    @media(max-width:800px){
+      #grid {
+        display:block;
+      }
+      #article {
+        margin-left:10px;
+      }
+      ol {
+        border-right:none;}
+    }
+    /* 사진 center맞춤 */
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    body{-webkit-text-size-adjust:none}
+  </style>
+  <link rel="stylesheet" href="CSS/bootstrap.css">
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/boostrap.js"></script>
+</head>
+<body>
+  <h1><a href="blog_index.html">하임이 가족 블로그</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="blog_1.html">하임이 이야기</a></li>
+      <li><a href="blog_2.html">미래 이야기</a></li>
+      <li><a href="blog_3.html">엄마 아빠 이야기</a></li>
+    </ol>
+    <div id="article">
+      <h2>게시판</h2>
+      <!-- <img src="family.jpg" width="500"> -->
+      <p>여기는 우리 가족에 대한 이야기를 기억하는 공간입니다. 엄마 아빠 그리고 하임이와 함께 나누는 1분 1초가 모두 소중하고 간직하고 싶은 이야기들입니다. 현실적으로 모든 것을 기억 할 수 없기에 꼭 다음에도 다시한번 되돌아보고 싶거나 추억하고 싶은 이야기들을 담아 놓았습니다. 이 세상이 태어나 어렵게 만난, 하지만 운명적으로 만난 엄마 아빠와 그리고 하늘이 내려주신 우리집의 보물 큰 딸 하임이의 이야기가 이제 시작 됩니다.
+      </p>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성자</th>
+              <th>날짜</th>
+              <th>조회수</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <th>1</th>
+              <th><a href="#write5">첫 이야기입니다</a></th>
+              <th>아빠</th>
+              <th>2019.07.18</th>
+              <th>0</th>
+          </tr>
+          <tr>
+              <th>2</th>
+              <th>두번째 이야기입니다</th>
+              <th>아빠</th>
+              <th>2019.07.18</th>
+              <th>0</th>
+          </tr>
+        </tbody>
+      </table>
+    <a class="btn btn-default pull-right">글쓰기</a>
+    <div class="text-center">
+      <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+    </div>
+    <div class="story" id="write1">
+      <h3>제목 : 첫 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write1">
+      <h3>제목 : 첫 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write2">
+      <h3>제목 : 2 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write3">
+      <h3>제목 : 3 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write4">
+      <h3>제목 : 4 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write5">
+      <h3>제목 : 5 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write4">
+      <h3>제목 : 4 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write4">
+      <h3>제목 : 4 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write4">
+      <h3>제목 : 4 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+    <div class="story" id="write4">
+      <h3>제목 : 4 이야기입니다</h3>
+      <p>엄마가 월요일에 꼬빵이를 낳고 토요일에 드디어 퇴원을 해서 울산 공업탑 및 대공원 옆에 있는 르보아 조리원으로 드디어 입소를 했단다~ 나름 꽤 비싼 곳이긴한데 꼬빵이를 조금 더 세심하게 보살피고자 여기로 옮겨 왔단다~</p>
+      <p>한 2주간 여기에 머물면서 꼬빵이 모유수유도 열심히하고, 엄마도 조금씩 쉬면서 몸을 회복할려고해~
+      꼬빵이도 잘 쉬도록 하세요~</p>
+    </div>
+  </div>
+</body>
